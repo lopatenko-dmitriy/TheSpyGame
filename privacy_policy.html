@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Spy Game</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #e2e8f0;
+            background: linear-gradient(135deg, #0b1220 0%, #1e293b 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(226, 232, 240, 0.1);
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #e2e8f0;
+            margin-bottom: 8px;
+        }
+
+        .date {
+            font-size: 13px;
+            font-style: italic;
+            color: #94a3b8;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #e2e8f0;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #cbd5e1;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            list-style: none;
+            margin-left: 16px;
+            margin-bottom: 12px;
+        }
+
+        ul li {
+            font-size: 14px;
+            color: #cbd5e1;
+            margin-bottom: 4px;
+            padding-left: 8px;
+        }
+
+        ul li:before {
+            content: "• ";
+            margin-right: 8px;
+        }
+
+        .links {
+            margin-left: 16px;
+            margin-bottom: 12px;
+        }
+
+        .links a {
+            display: block;
+            font-size: 14px;
+            color: #818cf8;
+            text-decoration: underline;
+            margin-bottom: 4px;
+        }
+
+        .links a:hover {
+            color: #a5b4fc;
+        }
+
+        .contact {
+            font-size: 14px;
+            font-weight: 600;
+            color: #818cf8;
+            margin-left: 16px;
+            margin-top: 4px;
+        }
+
+        .language-selector {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .language-selector button {
+            background: rgba(129, 140, 248, 0.1);
+            border: 1px solid #818cf8;
+            color: #e2e8f0;
+            padding: 8px 16px;
+            margin: 0 8px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .language-selector button:hover {
+            background: rgba(129, 140, 248, 0.2);
+        }
+
+        .language-selector button.active {
+            background: #818cf8;
+            color: #0b1220;
+        }
+
+        .content {
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="language-selector">
+            <button onclick="showLanguage('en')" id="btn-en" class="active">English</button>
+            <button onclick="showLanguage('uk')" id="btn-uk">Українська</button>
+        </div>
+
+        <!-- English Content -->
+        <div id="content-en" class="content active">
+            <h1>Privacy Policy for Spy Game</h1>
+            <p class="date">Last Updated: February 9, 2026</p>
+
+            <p>This Privacy Policy describes how Spy Game ("we", "us", or "our") collects, uses, and shares information when you use our mobile application.</p>
+
+            <h2>1. Information We Collect</h2>
+            <p>Spy Game is a local party game that does not collect or store any personal information from users. All game data (player numbers, roles, selected themes) is stored locally on your device and is never transmitted to our servers or third parties.</p>
+
+            <h2>2. Advertising</h2>
+            <p>We use Google AdMob to display advertisements in the app. AdMob may collect and use certain information for advertising purposes, including:</p>
+            <ul>
+                <li>Device information (device type, operating system)</li>
+                <li>Ad interaction data (clicks, views)</li>
+                <li>Approximate location (based on IP address)</li>
+            </ul>
+
+            <p>For more information about how Google uses data, please visit:</p>
+            <div class="links">
+                <a href="https://policies.google.com/privacy" target="_blank">→ Google Privacy Policy</a>
+                <a href="https://support.google.com/admob/answer/9012903" target="_blank">→ Google AdMob Partners</a>
+            </div>
+
+            <p>You can opt out of personalized advertising by visiting:</p>
+            <div class="links">
+                <a href="https://adssettings.google.com" target="_blank">→ Google Ad Settings</a>
+            </div>
+
+            <h2>3. Game Data</h2>
+            <p>All game-related data (player count, spy count, selected themes, language preference) is stored locally on your device using SharedPreferences. This data:</p>
+            <ul>
+                <li>Never leaves your device</li>
+                <li>Is not transmitted to any server</li>
+                <li>Can be deleted by uninstalling the app</li>
+            </ul>
+
+            <h2>4. Children's Privacy</h2>
+            <p>Spy Game does not knowingly collect personal information from children under 13. The game is designed for party entertainment and does not require account creation or personal data input.</p>
+
+            <h2>5. Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. Any changes will be reflected in the app with an updated "Last Updated" date.</p>
+
+            <h2>6. Contact Us</h2>
+            <p>If you have questions or concerns about this Privacy Policy, please contact us at:</p>
+            <p class="contact">dimalopp@gmail.com</p>
+        </div>
+
+        <!-- Ukrainian Content -->
+        <div id="content-uk" class="content">
+            <h1>Політика конфіденційності для Spy Game</h1>
+            <p class="date">Останнє оновлення: 9 лютого 2026 року</p>
+
+            <p>Ця Політика конфіденційності описує, як Spy Game ("ми", "нас" або "наш") збирає, використовує та передає інформацію під час використання нашого мобільного додатку.</p>
+
+            <h2>1. Інформація, яку ми збираємо</h2>
+            <p>Spy Game — це локальна гра для вечірок, яка не збирає та не зберігає жодної персональної інформації користувачів. Усі ігрові дані (номери гравців, ролі, обрані теми) зберігаються локально на вашому пристрої і ніколи не передаються на наші сервери чи третім особам.</p>
+
+            <h2>2. Реклама</h2>
+            <p>Ми використовуємо Google AdMob для відображення реклами в додатку. AdMob може збирати та використовувати певну інформацію для рекламних цілей, зокрема:</p>
+            <ul>
+                <li>Інформація про пристрій (тип пристрою, операційна система)</li>
+                <li>Дані про взаємодію з рекламою (кліки, перегляди)</li>
+                <li>Приблизне місцезнаходження (на основі IP-адреси)</li>
+            </ul>
+
+            <p>Для отримання додаткової інформації про те, як Google використовує дані, відвідайте:</p>
+            <div class="links">
+                <a href="https://policies.google.com/privacy" target="_blank">→ Політика конфіденційності Google</a>
+                <a href="https://support.google.com/admob/answer/9012903" target="_blank">→ Партнери Google AdMob</a>
+            </div>
+
+            <p>Ви можете відмовитися від персоналізованої реклами, відвідавши:</p>
+            <div class="links">
+                <a href="https://adssettings.google.com" target="_blank">→ Налаштування реклами Google</a>
+            </div>
+
+            <h2>3. Ігрові дані</h2>
+            <p>Усі дані, пов'язані з грою (кількість гравців, кількість шпигунів, обрані теми, налаштування мови), зберігаються локально на вашому пристрої за допомогою SharedPreferences. Ці дані:</p>
+            <ul>
+                <li>Ніколи не залишають ваш пристрій</li>
+                <li>Не передаються на жодний сервер</li>
+                <li>Можуть бути видалені шляхом видалення додатку</li>
+            </ul>
+
+            <h2>4. Конфіденційність дітей</h2>
+            <p>Spy Game не збирає свідомо персональну інформацію від дітей віком до 13 років. Гра призначена для розваг на вечірках і не вимагає створення облікового запису або введення персональних даних.</p>
+
+            <h2>5. Зміни в цій політиці</h2>
+            <p>Ми можемо час від часу оновлювати цю Політику конфіденціальності. Будь-які зміни будуть відображені в додатку з оновленою датою "Останнє оновлення".</p>
+
+            <h2>6. Зв'язатися з нами</h2>
+            <p>Якщо у вас є питання або зауваження щодо цієї Політики конфіденційності, зв'яжіться з нами за адресою:</p>
+            <p class="contact">dimalopp@gmail.com</p>
+        </div>
+    </div>
+
+    <script>
+        function showLanguage(lang) {
+            // Hide all content
+            document.querySelectorAll('.content').forEach(el => {
+                el.classList.remove('active');
+            });
+
+            // Remove active class from all buttons
+            document.querySelectorAll('.language-selector button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Show selected content
+            document.getElementById('content-' + lang).classList.add('active');
+            document.getElementById('btn-' + lang).classList.add('active');
+        }
+    </script>
+</body>
+</html>
